@@ -1,0 +1,41 @@
+* {
+  color: red;
+  font-family: 'Hammersmith One', sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+.w1-logo {
+  width: 200px;
+  height: 100px;
+}
+
+a {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.w1-body {
+  text-align: center;
+  margin-top: 3%;
+  background-image: productos.jpg;
+}
+
+h1 {
+  text-emphasis-style: bold;
+  color: black;
+}
+
+button {
+  color: black;
+}
+
+.w2-body {
+  text-align: center;
+  margin-top: 3%;
+  background-image: productos.jpg;
+}
+
+
