@@ -1,7 +1,6 @@
-# Website for Quimica Cinco Estrellas
 # Sitio Web para Quimica Cinco estrellas
 
-_Sitio estático, lenguajes **HTML y CSS**. Hosteado en **Github Pages**.
+_Sitio estático, lenguajes **HTML y CSS**. Hosteado en **Github Pages**._
 
 [_Enlace Facebook_](https://www.facebook.com/quimicacinco.estrellas.5)
 
