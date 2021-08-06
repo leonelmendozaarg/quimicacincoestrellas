@@ -8,5 +8,5 @@ _Sitio estático, lenguajes **HTML y CSS**. Hosteado en **Github Pages**.
 # Website for Quimica Cinco Estrellas
 _Static **HTML & CSS** web, hosted on **Gh-pages**._
 
-[_ Their Facebook_](https://www.facebook.com/quimicacinco.estrellas.5)
+[_Their Facebook_](https://www.facebook.com/quimicacinco.estrellas.5)
 
