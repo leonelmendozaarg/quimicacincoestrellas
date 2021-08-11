@@ -23,3 +23,8 @@ header {
     box-sizing: border-box
     border: 10px yellow;
 }
+
+.logo {
+    width: 5%;
+    height: 5%;
+}
