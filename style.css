@@ -28,3 +28,7 @@ header {
     width: 90px;
     height: 60px;
 }
+
+.head {
+    background: black;
+}
