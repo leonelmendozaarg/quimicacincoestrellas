@@ -29,5 +29,6 @@ header {
 }
 
 .head {
-    background: black;
+    border: 10px
+    background: #589090;
 }
