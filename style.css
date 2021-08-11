@@ -1,0 +1,25 @@
+* {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: justify;
+}
+
+footer {
+    color: yellow;
+}
+
+header {
+    color: yellow
+    text-align: center;
+}
+
+.background1 {
+    box-sizing: border-box
+    border: 10px yellow;
+}
