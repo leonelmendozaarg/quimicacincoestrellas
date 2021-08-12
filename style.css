@@ -21,6 +21,12 @@ header {
     text-align: center;
 }
 
+button {
+    text-align: center;
+    border: yellow;
+    color: red;
+}
+
 .background1 {
     box-sizing: border-box
     border: 10px yellow;
