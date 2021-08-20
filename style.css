@@ -32,8 +32,12 @@ button {
     border: 10px yellow;
 }
 
-.logohead {
+.logo {
     height: 80px;
+    position: relative;
+}
+
+.head {
     position: relative;
 }
 
