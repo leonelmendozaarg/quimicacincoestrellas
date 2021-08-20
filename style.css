@@ -22,9 +22,6 @@ nav {
     text-align: justify;
 }
 
-footer {
-    color: yellow;
-}
 
 button {
     border: black;
@@ -41,4 +38,9 @@ button {
 
 .switch {
     color = 0;
+}
+
+.footer {
+    background: #838383;
+    color: white;
 }
