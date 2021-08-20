@@ -43,10 +43,9 @@ button {
 .footer {
     background: #838383;
     color: white;
-    border 20px #838383;
+    border: 20px #838383;
 }
 
 .footer a {
-    position: relative;
     padding-left: 4px;
 }
