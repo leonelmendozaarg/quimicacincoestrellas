@@ -41,6 +41,9 @@ button {
     color = 0;
 }
 
+footer {
+    padding-top: 4px;
+}
 .footer {
     background: #838383;
     color: white;
