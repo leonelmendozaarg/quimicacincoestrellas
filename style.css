@@ -44,6 +44,7 @@ button {
 .footer {
     background: #838383;
     color: white;
+    border 20px #838383;
 }
 
 .footer a {
