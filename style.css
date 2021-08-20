@@ -44,3 +44,8 @@ button {
     background: #838383;
     color: white;
 }
+
+.footer a {
+    position: relative;
+    padding-left: 4px;
+}
