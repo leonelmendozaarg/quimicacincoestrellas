@@ -44,13 +44,11 @@ button {
 .footer {
     background: #838383;
     color: white;
+    border-block: 5px;
+    border-block-color: red;
 }
 
 .footer a {
     position: relative;
     padding-left: 4px;
-}
-
-section {
-    height: 4px;
 }
