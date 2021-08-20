@@ -10,8 +10,12 @@ nav {
     text-align: justify;
     background: gray;
     border-radius: 2px;
-    font-family: 'Bebas Neue', cursive;
     padding: 10px;
+}
+
+.subheading {
+    padding: 10px;
+    text-align: justify;
 }
 
 footer {
