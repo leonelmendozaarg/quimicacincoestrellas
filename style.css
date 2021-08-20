@@ -7,9 +7,10 @@ h1 {
 }
 
 nav {
-    text-align: center;
+    text-align: justify
     background: gray;
     border-radius: 2px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 footer {
@@ -39,4 +40,8 @@ button {
 .head {
     border: 10px
     background: gray;
+}
+
+.switch {
+    color = 0;
 }
