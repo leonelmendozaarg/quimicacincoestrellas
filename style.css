@@ -24,9 +24,7 @@ header {
 }
 
 button {
-    text-align: center;
-    border: yellow;
-    color: red;
+    border: black;
 }
 
 .bg1 {
