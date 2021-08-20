@@ -38,12 +38,8 @@ button {
 }
 
 .head {
-    position: relative;
-}
-
-.head {
     border: 10px;
-    background: gray;
+    background: black;
 }
 
 .switch {
