@@ -1,6 +1,5 @@
 * {
     text-align: justify;
-    position: relative;
 }
 
 h1 {
@@ -16,11 +15,6 @@ nav {
 
 footer {
     color: yellow;
-}
-
-header {
-    color: yellow
-    text-align: center;
 }
 
 button {
