@@ -28,12 +28,10 @@ button {
 
 .logo {
     height: 80px;
-    position: relative;
 }
 
 .head {
     border: 10px;
-    background: black;
 }
 
 .switch {
