@@ -1,5 +1,5 @@
 console.log('ready');
 
 function advert() {
-    alert("Proximamente");
+    alert("Proximamente..");
 };
