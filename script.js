@@ -6,6 +6,6 @@ function advert() {
 
 function loading() {
     let x = document.GetElementById('price');
-    let value = "$00"
+    let value = "$00";
     x.innerHTML = value;
 }
