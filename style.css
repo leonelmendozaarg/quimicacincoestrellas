@@ -32,7 +32,7 @@ nav {
 
 
 button {
-    border: 10px dashed black;
+    border: 10px solid black;
 }
 
 .bg1 {
@@ -44,9 +44,3 @@ button {
     height: 80px;
     position: relative;
 }
-
-.switch {
-    color = 0;
-}
-
-
