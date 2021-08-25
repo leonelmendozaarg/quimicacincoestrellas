@@ -2,6 +2,10 @@
     text-align: justify;
 }
 
+html {
+    border 5px solid yellow;
+}
+
 h1 {
     text-align: center;
 }
