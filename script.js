@@ -8,4 +8,4 @@ function loading() {
     let x = document.GetElementById('price');
     let value = "$00";
     x.innerHTML = value;
-}
+};
