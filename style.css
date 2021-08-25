@@ -42,18 +42,11 @@ button {
 
 .logo {
     height: 80px;
+    position: relative;
 }
 
 .switch {
     color = 0;
 }
 
-.footer {
-    background: #838383;
-    color: white;
-    border: 20px #838383;
-}
 
-.footer a {
-    padding-left: 4px;
-}
