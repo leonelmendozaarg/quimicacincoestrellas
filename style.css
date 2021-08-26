@@ -51,7 +51,7 @@ button {
     position: relative;
 }
 
-footer {
+.footer {
     background: #7CFF00;
     opacity: 0.7;
     background-clip: border-box;
