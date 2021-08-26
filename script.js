@@ -4,7 +4,7 @@ function advert() {
     alert("Proximamente..");
 };
 
-function print() {
+function imprimir() {
     document.getElementById('footer').style.display = "none"; 
     await 5s;
     window.print()
