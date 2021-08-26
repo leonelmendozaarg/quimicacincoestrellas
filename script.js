@@ -6,6 +6,5 @@ function advert() {
 
 function imprimir() {
     document.getElementById('footer').style.display = "none"; 
-    await 5s;
-    window.print()
+    window.print();
 }
