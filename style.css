@@ -1,11 +1,10 @@
 * {
+    background: yellow;
     text-align: justify;
     margin: 1%;
 }
 
-html {
-    border 5px solid yellow;
-}
+/* Elements */
 
 table {
     border: 3px solid black;
@@ -16,10 +15,6 @@ h1 {
     text-align: center;
 }
 
-header {
-    background-clip: border-box;
-}
-
 nav {
     background: #39FF00;
     border-radius: 2px;
@@ -27,20 +22,16 @@ nav {
     background-clip: border-box;
 }
 
-.navi {
-    align-content: center;
-    margin: 2px;
-}
-
-.subheading {
-    padding: 10px;
-    text-align: justify;
-}
-
-
 button {
-    border: 3px solid black;
-    color: white;
+    border: 2px solid #ABFFF6;
+    color: black;
+    background: white;
+}
+
+/* Classes */
+.pages {
+    padding: 10px;
+    align-content: center;
 }
 
 .bg1 {
