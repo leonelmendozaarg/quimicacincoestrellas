@@ -4,6 +4,7 @@
 
 html {
     border 5px solid yellow;
+    opacity: 0.5;
 }
 
 table {
@@ -44,4 +45,14 @@ button {
 .logo {
     height: 80px;
     position: relative;
+}
+
+footer {
+    color: #7CFF00;
+    opacity: 0.7;
+    background-clip: border-box;
+}
+
+.slogan {
+    quotes: '"' '"';
 }
