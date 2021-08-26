@@ -4,7 +4,6 @@
 
 html {
     border 5px solid yellow;
-    opacity: 0.5;
 }
 
 table {
@@ -16,10 +15,15 @@ h1 {
     text-align: center;
 }
 
+header {
+    background-clip: border-box;
+}
+
 nav {
     background: #39FF00;
     border-radius: 2px;
     padding: 20px;
+    background-clip: border-box;
 }
 
 .navi a {
@@ -48,7 +52,7 @@ button {
 }
 
 footer {
-    color: #7CFF00;
+    background: #7CFF00;
     opacity: 0.7;
     background-clip: border-box;
 }
