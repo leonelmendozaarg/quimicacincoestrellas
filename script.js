@@ -4,8 +4,8 @@ function advert() {
     alert("Proximamente..");
 };
 
-function loading() {
-    let x = document.GetElementById('price');
-    let value = "$00";
-    x.innerHTML = value;
-};
+function print() {
+    document.getElementById('footer').style.display = "none"; 
+    await 5s;
+    window.print()
+}
