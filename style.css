@@ -27,8 +27,9 @@ nav {
     background-clip: border-box;
 }
 
-.navi a {
-    padding-left: 20px;
+.navi {
+    align-content: center;
+    margin: 2px;
 }
 
 .subheading {
