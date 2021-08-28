@@ -42,8 +42,11 @@ button {
 }
 
 .block {
+    background: yellow;
     position: absolute;
-    height: 5px;
+    top: 3px; bottom: 3px;
+    color: white;
+    text-align: center;
 }
 .bg1 {
     box-sizing: border-box;
