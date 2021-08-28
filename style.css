@@ -1,5 +1,4 @@
 * {
-    background: yellow;
     text-align: justify;
     margin: 1%;
 }
@@ -19,6 +18,7 @@ nav {
     background: #39FF00;
     border-radius: 2px;
     background-clip: border-box;
+    text-align: right;
 }
 
 button {
@@ -31,9 +31,20 @@ button {
 /* Classes */
 .pages {
     padding: 10px;
-    align-content: center;
+    text-align: right;
 }
 
+.cover {
+    background-clip: border-box;
+    height: 15px
+    background: yellow;
+    color: black;
+}
+
+.block {
+    position: absolute;
+    height: 5px;
+}
 .bg1 {
     box-sizing: border-box;
     border: 10px yellow;
