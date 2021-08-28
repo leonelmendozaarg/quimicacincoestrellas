@@ -40,8 +40,6 @@ button {
     height: 15px;
     background: solid yellow;
     color: black;
-    position: relative;
-    left: 3px; bottom: 3px;
 }
 
 .block {
