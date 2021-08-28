@@ -44,7 +44,7 @@ button {
 .block {
     background: yellow;
     position: absolute;
-    top: 3px; bottom: 3px;
+    height: 10px;
     color: yellow;
     text-align: center;
 }
