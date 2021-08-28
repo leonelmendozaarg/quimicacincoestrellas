@@ -47,6 +47,7 @@ button {
     position: absolute;
     color: solid yellow;
     text-align: center;
+    top: 3px; bottom: 3px;
 }
 .content {
     position: relative;
