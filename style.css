@@ -45,8 +45,7 @@ button {
 .block {
     background: yellow;
     position: absolute;
-    height: 10px;
-    color: yellow;
+    color: solid yellow;
     text-align: center;
 }
 .content {
