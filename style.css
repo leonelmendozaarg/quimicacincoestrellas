@@ -36,7 +36,7 @@ button {
 
 .cover {
     background-clip: border-box;
-    height: 15px
+    height: 15px;
     background: solid yellow;
     color: black;
 }
