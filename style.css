@@ -64,3 +64,10 @@ button {
     background-color: #7CFF00 50%;
     background-clip: border-box;
 }
+
+.list-page {
+    background: #E2FFC4;
+    width: 100%
+    content: justify;
+    text-align: center;
+}
