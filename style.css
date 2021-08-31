@@ -70,4 +70,6 @@ button {
     width: 100%
     content: justify;
     text-align: center;
+    background-image: url(LOGO.png);
+    height: 30px;
 }
