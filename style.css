@@ -29,6 +29,10 @@ button {
     tab-size: 10px;
 }
 
+iframe {
+    width: 50%;
+}
+
 /* Classes */
 .pages {
     padding: 10px;
