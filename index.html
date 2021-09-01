@@ -4,10 +4,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Química 5 Estrellas</title>
     <link rel="shortcut icon" href="LOGO.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            background-color: #f1f1f1;
+            position: fixed;
+            overflow: auto;
+        }
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .anima {
+            width: 20px;
+            height: 50px;
+            background-color: blue;
+            height: 10px;
+            width: 20px;
+            animation: width 10s;
+        }
+        .anima:hover {
+            width: 2000px;
+        }
+    </style>
     <link href="script.js">
   </head>
   <body>
+      <div class="anima">
+          </div>
+      <ul>
+          <li class="active">
+              <a class="" href="#">Home</a>
+          </li>
+          <li>
+              <a class="" href="#">Products</a>
+          </li>
+          <li>
+              <a class="" href="#">Services</a>
+          </li>
+      </ul>
       <header>
           <div>
               <a href="index.html"><img src="LOGO.png" class="brand"></a>
