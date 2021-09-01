@@ -1,0 +1,1 @@
+document.getElementById('thumb-logo').style.display = 'none';
