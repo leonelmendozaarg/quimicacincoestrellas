@@ -8,6 +8,27 @@
         button {
             background-color: transparent;
             border: 0px;
+            position: fixed;
+            top: 14px;
+        }
+        ul {
+            list-style: none;
+            display: block;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            background-color: black;
+            
+        }
+        li {
+            display: inline;
+            background: yellow;
+            padding: 8px 16px;
+            width: 100%;
+        }
+        li a {
+            color: white;
+            width: 100%;
         }
         </style>
     </head>
@@ -15,10 +36,19 @@
         <div>
             <header>
                 <div>
+                    <div>
                     <button type="button" onclick=""><i class="material-icons">menu</i></button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a>Inicio</a></li>
+                            <li><a>Productos</a></li>
+                            <li><a>Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
-                    <img id="brand-logo" src="">
+                    <img id="brand-logo" src="IMG_20210901_1612128_a">
                 </div>
                 <div class="thumb-image" id="thumb-image">
                     <img src="IMG_20210901_1612128_a.png">
