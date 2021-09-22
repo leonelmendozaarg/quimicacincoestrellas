@@ -5,14 +5,17 @@
     <title>Química 5 Estrellas</title>
     <link rel="shortcut icon" href="LOGO.png" type="image/x-icon"> 
     <style>
+        * {
+            transition: 0.4s;
+        }
+        html {
+            
+            background-clip: border-box;
+        }
         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-    
-            background-color: #f1f1f1;
-        
             overflow: hidden;
+            padding: 0;
+            list-style-image: url(IMG);
         }
         li {
             display: inline;
@@ -20,46 +23,62 @@
         }
         li a {
             display: block;
-            color: #000;
-            text-align: center;
-            padding: 8px;
-            text-decoration: none;
-        }
-        li a:hover {
-            background-color: #555;
-            color: white;
-
+            padding: 10px;
+            background-color: green;
+            background-clip: border-box;
+            
         }
         .active {
             background-color: #04AA6D;
             color: white;
         }
+        .logo {
+            background-color: yellow;
+            width: 80px;
+            height: 80px;
+            background-clip: border-box;
+            position: fixed;
+            display: block;
+        }
+        .footer ul {
+            list-style-type: upper-roman;
+        }
+        .footer li {
+            display: inline;
+            padding: 6px;
+            background-color: none;
+            background-clip: border-box;
+        }
+        button {
+            height: 8%;
+            width: 20%;
+            transition: 0.8s;
+        }
+        .footer {
+            width: 100%;
+            background-color: green;
+            background-clip: border-box;
+            display: flex;
+        }
+        .groupss {
+            display: flex;
+            
+        }
+        section {
+            height: 3px solid transparent;
+        }
     </style>
     <link href="script.js">
   </head>
   <body>
-      <div class="anima">
-          </div>
-      <ul>
-          <li class="active"><a class="" href="#">Home</a></li>
-          <li><a class="" href="#">Products</a></li>
-          <li><a class="" href="#">Services</a> </li>
-      </ul>
       <header>
           <div>
               <a href="index.html"><img src="LOGO.png" class="brand"></a>
+              <h1>QUIMICA 5 ESTRELLAS</h1>
           </div>
-          <div class="pages">
-              <a href="products.html">Catálogo</a> \
-              <a href="about.html">Sobre Nosotros</a>
-          </div>
-          <div>
       </header>
       <nav>
-          <a><b>Contacto:</b></a>
-          <a href="">Facebook</a> \
-          <a href="">WhatsApp</a> \
-          <a href="" onclick="advert()"><b>4988713</b></a>
+          
       </nav>
       <section>
           <div class="cover">
@@ -77,20 +96,26 @@
               </div>
               <div class="content">
               <p>Contamos con una gran variedad y con sus respectivas medidas, si hay algún producto que es de su interés, no dude en contactar con alguno de nuestros proveedores.</p>
-              <a href=""><button>Ver Catálogo</button></a>
+              <div>
+                  <button>Ver Catálogo</button>
+                  <div class="groupss">
+                      <a>Agua Lavandinas</a>
+                      <a>Detergente Lavavajillas</a>
+                      <a>Demas productos.</a>
+                  </div>
+              </div>
               </div>
           </div>
       </section>
      <footer class="footer">
+            <div>
+                
+            </div>
          <div>
              <img class="brand" src="LOGO.png">
              <p>Los Artículos de tu Hogar</p>
          </div>
          <div>
-             <p><b>Páginas</b></p>
-             <a href=""><img>Inicio</a> \
-             <a href=""><img>Contacto</a> \
-             <a href=""><img>Nosotros</a>
              
              <p><b>Contacto</b></p>
              <a href=""><img>Facebook</a> \
