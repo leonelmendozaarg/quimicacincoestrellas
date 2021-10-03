@@ -67,18 +67,29 @@
         section {
             height: 3px solid transparent;
         }
+        .navegacion {
+            position: relative;
+            width: 100%; 
+            left:0;
+            background-color: rgba(225,0,0,1);
+        }
+        .navegacion a {
+            
+        }
+        .
     </style>
     <link href="script.js">
   </head>
   <body>
       <header>
-          <div>
-              <a href="index.html"><img src="LOGO.png" class="brand"></a>
-              <h1>QUIMICA 5 ESTRELLAS</h1>
-          </div>
-      </header>
-      <nav>
           
+      </header>
+      <nav class="navegacion">
+          <div style="padding:8px;">
+              <a style="flex:0;padding:8px;">Inicio</a>
+              <a style="flex:0;padding:8px;">Catálogo</a>
+              <a style="padding:8px;flex:0;">Contacto</a>
+          </div>
       </nav>
       <section>
           <div class="cover">
@@ -109,14 +120,14 @@
       </section>
      <footer style="width:100%;background-color:rgba(0,255,0,1);padding:8px;position:absolute;left:0;">
          <div style="position:relative;">
+             <a style="text-size:15px;">Quimica Cinco Estrellas</a><br>
              <q style="font-size:15px;padding:10px;"><b>Los Artículos de tu Hogar</b></q>
          </div>
-         <div style="position:relative;height:0.2px;background-color:black;width:100%;left:0;display:block;"></div>
-         <div style="position:relative;width:50%;">
-             <a>Lista de Páginas</a><br>
-             <a style="position:relative;left:5px;">Inicio</a><br>
-             <a style="position:relative;left:5px">Catálogo</a><br>
-             <a style="position:relative;left:5px;">Contacto</a>
+         <div style="position:relative;width:50%;padding:4px;">
+             <a>Bottom Nav</a><br>
+             <a style="position:relative;left:5px;">• Inicio</a><br>
+             <a style="position:relative;left:5px">• Catálogo</a><br>
+             <a style="position:relative;left:5px;">• Contacto</a>
          </div>
      </footer>
   </body>
