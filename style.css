@@ -297,3 +297,31 @@ input::after {
 .footerSectionTwo img {
   height: 12px;
 }
+@font-face {
+  font-family: "aAhaWow";
+  src: url("aAhaWow.otf");
+  font-weight: 200;
+}
+.Sections h1 {
+    font-family: aAhaWow;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    text-align: center;
+}
+.Sections p {
+    text-align: justify;
+    color: black;
+    font-family: Sans-Serif;
+}
+.Sections button {
+    padding: 8px;
+    background-color: rgba(0,255,0,1);
+    border-radius: 3px;
+}
+.Sections a {
+  text-align: center;
+}
+.Sections button:hover {
+  opacity: 0.9;
+}
