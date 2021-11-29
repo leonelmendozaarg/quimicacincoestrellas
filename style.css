@@ -234,14 +234,56 @@ body {
   flex: 0;
   text-align: center;
 }
-        input {
-          width: 50%;
-        }
-        input::before {
-          content: " - ";
-          color: yellow;
-        }
-        input::after {
-          content: " + ";
-          color: yellow;
-        }
+/*input {
+  width: 50%;
+}
+input::before {
+  content: " - ";
+  color: yellow;
+}
+input::after {
+  content: " + ";
+  color: yellow;
+}*/
+.divCircle0 {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  }
+ .divCircle {
+   display: block;
+   border: 20px solid black;
+   border-left: 20px solid green;
+   border-width: 2px;
+   height: 100px;
+   width: 100px;
+   border-radius: 100%;
+   animation-name: loading;
+   animation-fill-mode: lineal;
+   animation-duration: 5s;
+  }
+@keyframes loading {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+}
+ .flex {
+   display: flex;
+ }
+ ol {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+ }
+ li {
+    float: center;
+    display: block;
+    padding: 3px;
+    flex: 0;
+  }
+  li:hover {
+    color: red;
+  } 
+  .flex-right {
+    padding-left: 40px;
+  }
