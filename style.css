@@ -234,3 +234,14 @@ body {
   flex: 0;
   text-align: center;
 }
+        input {
+          width: 50%;
+        }
+        input::before {
+          content: " - ";
+          color: yellow;
+        }
+        input::after {
+          content: " + ";
+          color: yellow;
+        }
