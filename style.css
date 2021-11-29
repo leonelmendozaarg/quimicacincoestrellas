@@ -325,3 +325,8 @@ input::after {
 .Sections button:hover {
   opacity: 0.9;
 }
+@font-face {
+  font-family: "aAhaWow";
+  src: url("aAhaWow.otf");
+  font-weight: 200;
+}
