@@ -330,3 +330,6 @@ input::after {
   src: url("aAhaWow.otf");
   font-weight: 200;
 }
+a {
+  font-family: Sans-Serif;
+}
