@@ -6,9 +6,56 @@
     <link rel="shortcut icon" href="LOGO.png" type="image/x-icon"> 
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="external/style.css" type="text/css" media="all" />
-    <link rel="shortcut icon" href="IMG_20211107_185522.png" type="image/x-icon" />
     <script type="text/javascript" charset="utf-8" src="script.js">
     </script>
+    <script type="text/javascript" charset="utf-8">
+    function element() {
+      document.getElementById("loadSection").style.display = "block";
+      document.getElementById("loadCharger").style.display = "none";
+    }
+      var timeoutLoadPage = setTimeout(element, 4000);
+    </script>
+    <style type="text/css" media="all">
+      #loadSection {
+        display: none;
+        height: 100%;
+        width: 100%;
+       /* position: fixed;*/
+      }
+      #loadCharger {
+        position: absolute;
+        height: 800px;
+        width: 100%;
+        background: yellow;
+      }
+      .loader {
+        text-align: center;
+      }
+      .loader::after {
+        padding: 3px;
+        content: "";
+        animation: charger;
+        animation-duration: 4s;
+        color: white;
+      }
+      @keyframes charger {
+        from {
+          content: "The content will be loaded in 4";
+        } 
+        25% {
+          content: "The content will be loaded in 3";
+        }
+        50% {
+          content: "The content will be loaded in 2";
+        }
+        75%  {
+          content: "The content will be loaded in 1";
+        }
+        to {
+          content: "The content will be loaded in ..";
+        }
+      }
+    </style>
   </head>
   <body>
       <header name="top" class="new-header">
@@ -21,6 +68,8 @@
                <a href="us.html">Nosotros</a>
                <a href="products.html">Productos</a>
                <a href="contact.html">Contacto</a>
+               <div style="padding:10px;">
+               </div>
             </div>
              </div>
           </div>
@@ -29,76 +78,154 @@
           <a style="text-align:center;"><img src="IMG_20211107_185522.png"></a>
         </div>
         <div class="">
-          <a href="tel:498-8713">+498-8713</a>
-          <a href="mailto:quimicacincoestrellas@gmail.com">E-mail</a>
-        </div>
-          <!--<div></div>
-          <div class="language">
-            <a>Español</a>
-            <a>Inglés</a>
-          </div> ¡-->
+          <a href="tel:498-8713"><img src="icon/phone.svg" height="30px"></a>
+          <a href="mailto:quimicacincoestrellas@gmail.com"><img src="icon/mail.svg" height="30px"></a>
       </header>
+      <script type="text/javascript" charset="utf-8">
+         function onloading() {
+          let rangeValue = document.getElementById('range').value;
+          let x = 0;
+          let y = x * 100;
+          console.log("data is changing")
+          if (rangeValue != y) {
+            document.getElementById('contenido').style.fontSize = rangeValue + "px";
+            console.log("The fontSize is: " + rangeValue + "px");
+          } else {
+            console.log('is not');
+          }
+         };
+         document.getElementById('headerNav').style.width = "0px";
+         function openHeaderNav() {
+           document.getElementById('headerNav').style.width = "250px";
+           document.getElementById('headerNavContent').style.display = 'block';
+           console.log("Navigation open");
+         }
+         function closeHeaderNav() {
+           document.getElementById('headerNav').style.width = "0px";
+           document.getElementById('headerNavContent').style.display = 'none';
+           console.log("Navigation closed");
+         }
+         function darkMode() {
+           let rangeValue = document.getElementById('range').value;
+           console.log("Dark mode: switch working.")
+           let x = rangeValue <= 50;
+           let z = rangeValue >= 50;
+           if (x) {
+             document.body.style.background = "white";
+             document.getElementById('headerNav').style.background = "blue";
+             console.log("Switched to white mode");
+           } else if (z) {
+             document.body.style.background = "black";
+             document.getElementById('headerNav').style.background = //"#025348";
+             console.log("Switched to black mode");
+           } else {
+             console.log("Wont work.")
+           }
+         }
+      </script>
+      <style type="text/css" media="all">
+        input {
+          width: 50%;
+        }
+        input::before {
+          content: " - ";
+          color: yellow;
+        }
+        input::after {
+          content: " + ";
+          color: yellow;
+        }
+      </style>
      <!-- <input type="range" name="" id="range" value="0" onchange="darkMode()"/> !-->
-      <!--<nav>
-          <div id="contenido" class="div-navigation-top">
-              <ol class="">
-                  <li><a>Inicio</a></li>
-                  <li><a>Nosotros</a></li>
-                  <li><a>Catalogo</a></li>
-                  <li><a>Contacto</a></li>
-              </ol>
+      </nav>
+          <div id="loadCharger">
+            <p class="loader"></p>
           </div>
-      </nav>¡-->
-      <section class="Sections">
+      <div id="loadSection" class="loadSection">
+      <section name="nosotros" class="Sections">
         <h1>Nosotros</h1>
-        <p>Desde +30 años distribuimos y fraccionamos artículos de Limpieza en Villa Gobernador Gálvez.</p>
-        <a href="us.html"><button type="submit"><i>Más información</i>.</button></a>
+        <p>Distribuyendo y fraccionando por más de +30 años Artículos de Limpieza en Villa Gobernador Gálvez.</p>
+        <p style="text-align:center;">
+        <a href="us.html"><button type="button">Leer Más</button></a></p>
       </section>
-      <section class="Sections">
+      <section name="productos" class="Sections">
         <h1>Productos</h1>
       <!-- <embed src="km_20211028_720p.mp4" autoplay="on" width="100%"> !-->
-        <p>Contamos con gran variedad de productos y con sus diferentes medidas. </p>
-        <a href="products.html"><button><i>Ver catálogo</i>.</button></a>
+        <p>Contamos con gran variedad de productos y en diferentes medidas. </p>
+        <p style="text-align:center;">
+        <a href="products.html"><button>Ver catálogo</button></a></p>
       </section>
-      <section class="Sections">
+      <section name="contacto" class="Sections">
         <h1>Contacto</h1>
-        <p>Conoce a nuestros proveedores y las diferentes formas de contactarlos.</p>
-        <a href="contact.html"><button type="submit"><i>Ver lista</i>.</button></a>
+        <p>Conoce a nuestros proveedores y sus diferentes formas de contactarlos.</p>
+        <p style="text-align: center;">
+        <a href="contact.html"><button type="submit"><i>Ver lista</i>.</button></a></p>
       </section>
-      <!--<div class="divCircle0">
-        <div class="divCircle">
-        </div>
-      </div>¡-->
       <div id="top">
-        <a id="top">↑</a>
+        <a id="top" class="">↑</a>
+      </div>
       </div>
      <footer>
+       <style type="text/css" media="all">
+       .divCircle0 {
+         display: block;
+         height: 100px;
+         width: 100px;
+         border-radius: 100%;
+       }
+       .divCircle {
+         display: block;
+         border: 20px solid black;
+         border-left: 20px solid green;
+         border-width: 2px;
+         height: 100px;
+         width: 100px;
+         border-radius: 100%;
+         animation-name: loading;
+         animation-fill-mode: lineal;
+         animation-duration: 5s;
+       }
+       @keyframes loading {
+         0% {transform: rotate(0deg);}
+         100% {transform: rotate(360deg);}
+       }
+         .flex {
+           display: flex;
+         }
+         ol {
+           margin: 0;
+           padding: 10px;
+           list-style-type: none;
+         }
+         li {
+           float: center;
+           display: block;
+           padding: 3px;
+           flex: 0;
+         }
+         li:hover {
+           color: red;
+         
+         .flex-right {
+           padding-left: 40px;
+         }
+       </style>
        <div class="flex">
-       <div>
-         <ol>
-           <li><b>-------</b></li>
-           <li><a>Inicio</a></li>
-           <li><a>Catálogo</a></li>
-           <li><a>Contacto</a></li>
+       <div class="" style="">
+         <ol style="">
+           <li><b>Saltos de página</b></b></li>
+           <li><a href="#nosotros">Nosotros</a></li>
+           <li><a href="#catalogo">Catalogo</a></li>
+           <li><a href="#contacto">Contacto</a></li>
          </ol>
        </div>
-       <div class="">
-         <ol>
-           <li><b>Social</b></li>
-           <li><a>Facebook</a></li>
-           <li><a>Instagram</a></li>
-           <li><a>WhatsApp</a></li>
-         </ol>
-       </div >
-       <!--<div class="flex-right">
-         <ol>
-           <li><a href="#top">Regresar al inicio.</a></li>
-         </ol>
-       </div>!-->
+       <div class="footerSectionTwo">
+         <p><img> Industria Argentina</p>
        </div>
-       <div class="" style="footerSectionTwo">
-         <a>Jujuy 2578, Villa Gobernador Gálvez, provincia de Santa Fe.</a>
-         <p><img src="industria_argentina.png" height="12px"> Industria Argentina</p>
+       <div style="padding:20px;">
+          <a href="tel:498-8713"><img src="phone.svg" height="30px"></a>
+          <a href="mailto:quimicacincoestrellas@gmail.com"><img src="mail.svg" height="30px"></a>
+       </div>
        </div>
      </footer>
   </body>
