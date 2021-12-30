@@ -181,7 +181,11 @@ footer {
 
  .flex {
    display: flex;
+   flex: 1 1 auto;
  }
+.support {
+  padding: 20px;
+}
  ol {
     margin: 0;
     padding: 10px;
@@ -207,9 +211,6 @@ footer {
   font-family: Sans-Serif; 
   padding: 8px;
 }
-.footerSectionTwo img {
-  height: 12px;
-}
 @font-face {
   font-family: "aAhaWow";
   src: url("./fonts/aAhaWow.otf");
@@ -224,7 +225,7 @@ footer {
     text-align: center;
 }
 .Sections p {
-    text-align: justify;
+    text-align: center;
     color: black;
     font-size: 15px;
 }
