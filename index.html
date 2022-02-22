@@ -3,158 +3,111 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Química 5 Estrellas</title>
-    <meta name="description" content="Articulos de Limpieza - Agua Lavandina, Detergente, Cloro, Entre otros. Conozca a Quimica Cinco Estrellas.. Leer Más">
-    <link rel="shortcut icon" href="images/quimicacincoestrellas.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-
-    <script type="text/javascript" charset="utf-8" src="script.js">
-    </script>
-    <script type="text/javascript" charset="utf-8">
-    function element() {
-      document.getElementById("loadSection").style.display = "block";
-      document.getElementById("loadCharger").style.display = "none";
-    }
-      var timeoutLoadPage = setTimeout(element, 4000);
-    </script>
-    <style>
-      #loadSection {
-  display: none;
-  height: 100%;
-  width: 100%;
- /* position: fixed;*/
-}
-#loadCharger {
-  position: absolute;
-  height: 800px;
-  width: 100%;
-  background: yellow;
-}
-.loader {
-  text-align: center;
-}
-.loader::after {
-  padding: 3px;
-  content: "";
-  animation: charger;
-  animation-duration: 4s;
-  color: white;
-}
-@keyframes charger {
-  from {
-    content: "The content will be loaded in 4";
-  } 
-  25% {
-    content: "The content will be loaded in 3";
-  }
-  50% {
-    content: "The content will be loaded in 2";
-  }
-  75%  {
-    content: "The content will be loaded in 1";
-  }
-  to {
-    content: "The content will be loaded in ..";
-  }
-}
-    </style>
+    <link rel="shortcut icon" href="LOGO.png" type="image/x-icon"> 
+   <link rel="stylesheet/less" href="style.less" type="text/css" media="all" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+    <script type="text/javascript" charset="utf-8" src="script.js"></script>
   </head>
-  <body class="loader">
-      <header name="top" class="new-header">
-        <div class="header-menu">
-          <a href="javascript:void(0);" onclick="openHeaderNav()"><img src="icons/menu.svg" style></a>
-          <div id="headerNav" class="header-navegacion">
-            <div id="headerNavContent" class="header-nav-content">
-              <a onclick="closeHeaderNav()"><img src="icons/close.svg"></a>
+  <body>
+      <header class="Header">
+        <div>
+          <div width="100%">
+              <img class="Icons" href="javascript:void(0);" onclick="openNav()" src="icon/menu.svg">
+          </div>
+          <div id="Nav" class="Navegation">
+            <div id="NavContent" class="Nav-Content">
+              <img class="Icons" onclick="closeNav()" src="icon/close.svg">
                <a href="index.html">Inicio</a>
-               <a href="nosotros.html">Nosotros</a>
-               <a href="productos.html">Productos</a>
+               <a href="us.html">Nosotros</a>
+               <a href="products.html">Productos</a>
+               <a href="contact.html">Contacto</a>
             </div>
           </div>
-          </div>
         </div>
-        <div class="header-logo">
-          <a style="text-align:center;"><img src="images/quimicacincoestrellas.png" alt="quimica cinco estrellas"></a>
+        <div class="Aligned">
+                  <img class="Logo" src="IMG_20211107_185522.png">
         </div>
-        <div class="">
-          <a href="tel:498-8713"><img src="icons/phone.svg" height="30px" alt="Telefono"></a>
-          <a href="mailto:quimica.cinco.estrellas@gmail.com"><img src="icons/mail.svg" height="30px" lt="E-mail"></a>
-      </header>
-      <script type="text/javascript" charset="utf-8">
-         function onloading() {
-          let rangeValue = document.getElementById('range').value;
-          let x = 0;
-          let y = x * 100;
-          console.log("data is changing")
-          if (rangeValue != y) {
-            document.getElementById('contenido').style.fontSize = rangeValue + "px";
-            console.log("The fontSize is: " + rangeValue + "px");
-          } else {
-            console.log('is not');
-          }
-         };
-         document.getElementById('headerNav').style.width = "0px";
-         function openHeaderNav() {
-           document.getElementById('headerNav').style.width = "250px";
-           document.getElementById('headerNavContent').style.display = 'block';
-           console.log("Navigation open");
-         }
-         function closeHeaderNav() {
-           document.getElementById('headerNav').style.width = "0px";
-           document.getElementById('headerNavContent').style.display = 'none';
-           console.log("Navigation closed");
-         }
-         function darkMode() {
-           let rangeValue = document.getElementById('range').value;
-           console.log("Dark mode: switch working.")
-           let x = rangeValue <= 50;
-           let z = rangeValue >= 50;
-           if (x) {
-             document.body.style.background = "white";
-             document.getElementById('headerNav').style.background = "blue";
-             console.log("Switched to white mode");
-           } else if (z) {
-             document.body.style.background = "black";
-             document.getElementById('headerNav').style.background = //"#025348";
-             console.log("Switched to black mode");
-           } else {
-             console.log("Wont work.")
-           }
-         }
-      </script>
-     <!-- <input type="range" name="" id="range" value="0" onchange="darkMode()"/> !-->
-      </nav>
-          <div id="loadCharger">
-            <p class="loader"></p>
-          </div>
-      <div id="loadSection" class="loadSection">
-        <!-- Inicio de Secciones -->
-      <section style="font-size:1.5em; text-align:center; display:flex; justify-content:center;  ">
-        <h1>Nos dedicamos a la distribución y fraccionamiento de Artículos de Limpieza.<br>
-        Desde hace 30 años trabajamos en Villa Gobernador Gálvez, trabajando en productos de buena calidad y a precio accesibles.</h1>
-      </section>
-      <section name="productos" class="Sections">
-          <h2>Catalogo de productos</h2>
-          <p>Contamos con gran variedad de productos y en diferentes medidas.</p>
-          <p></p><a href="productos.html"><button>Ver catálogo.</button></a></p>
-      </section>
-
-      <section name="contacto" class="Sections">
-        <h2>Sobre nosotros</h2>
-        <p>Conoce a nuestros proveedores y sus diferentes formas de contactarlos.</p>
-        <a href="nosotros.html"><button>Ver lista.</button></a></p>
-      </section>
+        </header>
+        <section class="trabajos">
+            <div>
+                <h1>Cloro, Agua Lavandina, Liquido Limpiador, Esencias.</h1>
+                <p>Contamos con una lista extensa de Productos</p>
+                <button>Accede a la lista entera desde aquí.</button>
+            </div>
+        </section>
+        <section class="trabajos">
+            <div>
+            <h1>Desde Hace 30 Años Trabajamos Distribuyendo Articulos De Limpieza.</h1>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Qu%C3%ADmica%20Cinco%20Estrellas&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trabajos">
+            <div class="contacto">
+                <h1>Forma de Contactarnos</h1>
+                <ul>
+                    <li><a>+4988713</a></li>
+                    <li><a>+54 9 341 373-9780</a></li>
+                    <li><a>QuimicaCincoEstrellas@gmail.com</a></li>
+                </ul>
+            </div>
+        </section>
+      <!--  <div class="up">
+            <button onclick="Top()" id="Arrow">↑</button>
+            <script type="text/javascript" charset="utf-8">
+                console.log(window.scrollY);
+                const scrollY = window.scrollY;
+                let halfY = 50%;
+                document.getElementById('Arrow').style.display = 'none';
+                function Top() {
+                    if (scrollY == HalfY) {
+                        document.getElementById('Arrow').style.display = 'none';
+                    }
+                }
+            </script>
+        </div>-->
+        <section class="trabajos">
+            <div>
+                <h1>Mas Sobre Quimica Cinco Estrellas</h1>
+                <p>Nuestras páginas de Faceebok y Instagram</p>
+            </div>
+        </section>
      <footer>
        <div class="flex">
-       <div class="hyperlinks">
-         <ol>
-           <li><a href="nosotros.html">Nosotros</a></li>
-           <li><a href="catalogo.html">Catalogo</a></li>
-         </ol>
-       </div>
-       <div class="support">
-          <a href="tel:498-8713"><img src="icons/phone.svg" height="30px" alt="Telefono"></a>
-          <a href="mailto:quimica.cinco.estrellas@gmail.com"><img src="icons/mail.svg" height="30px" alt="E-mail"></a>
-       </div>
+           <div class="row">
+               <div>
+               <p>¿Eres cliente de 5 Estrellas?</p>
+               </div>
+               <div>
+               <p>Apoyanos dejando una reseña positiva en nuestra pagina de Maps o Google, nos ayudaria muchisimo. ¡Gracias!</p>
+               </div>
+           </div>
+           <div>
+               <div>
+               <img class="Logo" src="IMG_20211107_185522.png" height="50px">
+               </div>
+           <div class="Social">
+           <ol>
+               <li>
+                <a href="mailto:quimicacincoestrellas@gmail.com"><img src="icon/mail.svg" height="30px"></a>
+                </li>
+               <li>
+                   <a href="tel:498-8713"><img src="icon/phone.svg" height="30px"></a>
+               </li>
+           </ol>
+           </div>
+           </div>
+           <div>
+               <ul>
+                   <li><a>Inicio</a></li>
+                   <li><a>Producto</a></li>
+                   <li><a>Contacto</a></li>
+               </ul>
+           </div>
        </div>
      </footer>
   </body>
