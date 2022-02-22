@@ -1,32 +1,47 @@
-console.log("Código cargado");
 
-/*    Función de px por rangos     */
-function onloading() {
-  let rangeValue = document.getElementById('range').value;
-  let x = 0;
-  let y = x * 100;
-  console.log("data is changing")
-  if (rangeValue != y) {
-    document.getElementById('contenido').style.fontSize = rangeValue + "px";
-    console.log("The fontSize is: " + rangeValue + "px");
-    } else {
-      console.log('is not');
-    }
-    };
-
-/*        Navegación       */
-document.getElementById('headerNav').style.width = "0px";
-
-    // Función abrir navegación
-function openHeaderNav() {
-  document.getElementById('headerNav').style.width = "250px";
-  document.getElementById('headerNavContent').style.display = 'block';
-  console.log("The navigation is open.");
-  };
-
-    // Función cerrar navegación
-function closeHeaderNav() {
-  document.getElementById('headerNav').style.width = "0px";
-  document.getElementById('headerNavContent').style.display = 'none';
-  console.log("The navigation is closed.");
-  };
+      var LoadPage = setTimeout(element, 4000);
+         document.getElementById('Nav').style.width = "0px";
+         
+         function openNav() {
+           document.getElementById('Nav').style.width = "250px";
+           document.getElementById('NavContent').style.display = 'block';
+           console.log("Navigation open");
+         }
+         function closeNav() {
+           document.getElementById('Nav').style.width = "0px";
+           document.getElementById('NavContent').style.display = 'none';
+           console.log("Navigation closed");
+         }
+         // Función "Modo Oscuro" con Ingreso de Rangos.
+         function darkMode() {
+           let rangeValue = document.getElementById('range').value;
+           console.log("Dark mode: switch working.")
+           let x = rangeValue <= 50;
+           let z = rangeValue >= 50;
+           if (x) {
+             document.body.style.background = "white";
+             document.getElementById('headerNav').style.background = "blue";
+             console.log("Switched to white mode");
+           } else if (z) {
+             document.body.style.background = "black";
+             document.getElementById('headerNav').style.background = //"#025348";
+             console.log("Switched to black mode");
+           } else {
+             console.log("Wont work.")
+              
+           }
+}
+ function Contact() {
+    var Contact = "contact.html";
+    window.open(Contact);
+ }
+ 
+ function Us() {
+     var Us = "us.html";
+     window.open(Us);
+ }
+ 
+ function Products() {
+     var Products = "products.html";
+     window.open(Products);
+ }
