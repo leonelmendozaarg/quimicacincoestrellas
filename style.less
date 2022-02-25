@@ -83,7 +83,6 @@ nav {
 }
 footer {
     width: @all;
-    height: 15em;
     background-color: @green;
     text-align: center;
     flex-flow: row;
@@ -125,6 +124,23 @@ li {
     font-family: "aAhaWow";
     src: url("./fonts/aAhaWow.otf");
     font-weight: 200;
+}
+.Sections {
+    align-self: center;
+    h1, h2 {
+        font-family: aAhaWow;
+        text-decoration-color: red;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-size: 15px;
+        color: black;
+    }
+    button {
+        padding: 8px;
+        background-color: @green;
+    }
 }
 h1 {
     font-family: aAhaWow;
@@ -210,7 +226,7 @@ div {
     ul {
         li:nth-child(1) {
             & ::before {
-            content: url("icons/phone-small.svg");
+            content: url("icons/phone.svg");
             }
         }
         li:nth-child(2) {
@@ -220,7 +236,7 @@ div {
         }
         li:nth-child(3) {
             & ::before {
-                content: url("icons/mail-small.svg");
+                content: url("icons/mail.svg");
             }
         }
         @media screen and (max-width: 413px) {
@@ -232,14 +248,20 @@ div {
             li:nth-child(2) {
                 & ::before {
                     content: url("icons/contact-small.svg");
-                }       
+                }
             }
             li:nth-child(3) {
                 & ::before {
-                    content: url("icons/mail-small.svg");
+                    content: url("icons/phone-small.svg");
                 }
             }
         }
     }
 }
 
+footer {
+    height: 20vh;
+    @media screen and (max-widh: 413px) {
+        height: 50vh;
+    }
+}
