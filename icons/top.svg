@@ -4,28 +4,28 @@
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	x="0%" y="0%"
-	width="80px" height="80px"
+	width="15px" height="15px"
 	viewBox="0 0 30.0 30.0"
 	enable-background="new 0 0 30.0 30.0"
 	xml:space="preserve">
 	<path
-		fill="#7F7F7F"
+		fill="#FFFFFF"
 		stroke="#000000"
-		fill-opacity="0.000"
+		fill-opacity="1.000"
 		stroke-opacity="1.000"
 		fill-rule="nonzero"
-		stroke-width="2.5104282"
+		stroke-width="0.0"
 		stroke-linejoin="miter"
-		stroke-linecap="square"
-		d="M3.10,6.82L26.90,6.82L26.90,22.99L3.10,22.99z"/>
+		stroke-linecap="round"
+		d="M13.02,11.82L17.32,11.82L17.32,24.91L13.02,24.91z"/>
 	<path
-		fill="#7F7F7F"
+		fill="#FFFFFF"
 		stroke="#000000"
-		fill-opacity="0.000"
+		fill-opacity="1.000"
 		stroke-opacity="1.000"
 		fill-rule="nonzero"
-		stroke-width="2.5104282"
+		stroke-width="0.0"
 		stroke-linejoin="miter"
-		stroke-linecap="square"
-		d="M4.13,8.38L15.00,15.99L25.87,8.38"/>
+		stroke-linecap="round"
+		d="M7.32,13.04L14.99,5.09L23.02,13.07"/>
 </svg>
