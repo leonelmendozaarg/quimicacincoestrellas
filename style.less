@@ -15,16 +15,19 @@ html, body {
     height: 500px;
     width: 100%;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     div {
         width: 100%;
     }
     @media screen and (max-width:413px) {
-        flex-flow: column;
+        flex-flow: row;
     }
     .Botones {
         display: flex;
         flex-flow: row;
+        div {
+            width: 100%;
+        }
         .Primero {
             border: 1px solid yellow;
             border-radius: 10px;
