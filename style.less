@@ -125,23 +125,6 @@ li {
     src: url("./fonts/aAhaWow.otf");
     font-weight: 200;
 }
-.Sections {
-    align-self: center;
-    h1, h2 {
-        font-family: aAhaWow;
-        text-decoration-color: red;
-        text-align: center;
-    }
-    p {
-        text-align: center;
-        font-size: 15px;
-        color: black;
-    }
-    button {
-        padding: 8px;
-        background-color: @green;
-    }
-}
 h1 {
     font-family: aAhaWow;
     font-weight: 200;
@@ -226,17 +209,17 @@ div {
     ul {
         li:nth-child(1) {
             & ::before {
-            content: url("icons/phone.svg");
+            content: url("icons/phone-small.svg");
             }
         }
         li:nth-child(2) {
             & ::before {
-                content: url("icons/contact.svg");
+                content: url("icons/contact-small.svg");
             }
         }
         li:nth-child(3) {
             & ::before {
-                content: url("icons/mail.svg");
+                content: url("icons/mail-small.svg");
             }
         }
         @media screen and (max-width: 413px) {
@@ -252,7 +235,7 @@ div {
             }
             li:nth-child(3) {
                 & ::before {
-                    content: url("icons/phone-small.svg");
+                    content: url("icons/mail-small.svg");
                 }
             }
         }
