@@ -11,6 +11,32 @@ html, body {
     transition: 0.3s;
 }
 
+.Encabezado {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    @media screen and (max-width:413px) {
+        flex-flow: column;
+    }
+    .Botones {
+        display: flex;
+        flex-flow: row;
+        .Primero {
+            border: 1px solid yellow;
+            border-radius: 10px;
+            background-color: red;
+        }
+        .Segundo {
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: blue;
+        }
+        @media screen and (max-width:413px) {
+            flex-flow: column;
+        }
+    }
+}
 .Header {
     height: 150px;
     background-color: yellow;
@@ -208,33 +234,33 @@ div {
 .contacto {
     ul {
         li:nth-child(1) {
-            & ::before {
+            & ::top {
             content: url("icons/phone-small.svg");
             }
         }
         li:nth-child(2) {
-            & ::before {
+            & ::top {
                 content: url("icons/contact-small.svg");
             }
         }
         li:nth-child(3) {
-            & ::before {
+            & ::top {
                 content: url("icons/mail-small.svg");
             }
         }
         @media screen and (max-width: 413px) {
             li:nth-child(1) {
-                & ::before {
+                & ::top {
                     content: url("icons/phone-small.svg");
                 }
             }
             li:nth-child(2) {
-                & ::before {
+                & ::top {
                     content: url("icons/contact-small.svg");
                 }
             }
             li:nth-child(3) {
-                & ::before {
+                & ::top {
                     content: url("icons/mail-small.svg");
                 }
             }
