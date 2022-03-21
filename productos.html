@@ -3,83 +3,31 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Química 5 Estrellas</title>
-    <link rel="shortcut icon" href="LOGO.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon"> 
+   <link rel="stylesheet/less" href="style.less" type="text/css" media="all" />
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     <script type="text/javascript" charset="utf-8" src="script.js"></script>
-    </script>
-    <script type="text/javascript" charset="utf-8">
-    function element() {
-      document.getElementById("loadSection").style.display = "block";
-      document.getElementById("loadCharger").style.display = "none";
-    }
-      var timeoutLoadPage = setTimeout(element, 4000);
-    </script>
-    <style type="text/css" media="all">
-      #loadSection {
-        display: none;
-        height: 100%;
-        width: 100%;
-       /* position: fixed;*/
-      }
-      #loadCharger {
-        position: absolute;
-        height: 800px;
-        width: 100%;
-        background: yellow;
-      }
-      .loader {
-        text-align: center;
-      }
-      .loader::after {
-        padding: 3px;
-        content: "";
-        animation: charger;
-        animation-duration: 4s;
-        color: white;
-      }
-      @keyframes charger {
-        from {
-          content: "The content will be loaded in 4";
-        } 
-        25% {
-          content: "The content will be loaded in 3";
-        }
-        50% {
-          content: "The content will be loaded in 2";
-        }
-        75%  {
-          content: "The content will be loaded in 1";
-        }
-        to {
-          content: "The content will be loaded in ..";
-        }
-      }
-    </style>
   </head>
   <body>
-      <header name="top" class="new-header">
-        <div class="header-menu">
-          <a href="javascript:void(0);" onclick="openHeaderNav()"><img src="menu.svg" style></a>
-          <div id="headerNav" class="header-navegacion">
-            <div id="headerNavContent" class="header-nav-content">
-              <a onclick="closeHeaderNav()"><img src="close.svg"></a>
+      <header class="Header">
+        <div>
+          <div width="100%">
+              <img class="Icons" href="javascript:void(0);" onclick="openNav()" src="icons/menu.svg">
+          </div>
+          <div id="Nav" class="Navegation">
+            <div id="NavContent" class="Nav-Content">
+              <img class="Icons" onclick="closeNav()" src="icons/close.svg">
                <a href="index.html">Inicio</a>
                <a href="us.html">Nosotros</a>
                <a href="products.html">Productos</a>
                <a href="contact.html">Contacto</a>
-               <div style="padding:10px;">
-               </div>
             </div>
-             </div>
           </div>
         </div>
-        <div class="header-logo">
-          <a style="text-align:center;"><img src="IMG_20211107_185522.png"></a>
+        <div class="Aligned">
+                  <img class="Logo" src="images/quimicacincoestrellas.png">
         </div>
-        <div class="">
-          <a href="tel:498-8713"><img src="phone.svg" height="30px"></a>
-          <a href="mailto:quimicacincoestrellas@gmail.com"><img src="mail.svg" height="30px"></a>
-      </header>
+        </header>
       <script type="text/javascript" charset="utf-8">
          function onloading() {
           let rangeValue = document.getElementById('range').value;
