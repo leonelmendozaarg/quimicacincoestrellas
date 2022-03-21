@@ -23,20 +23,26 @@ html, body {
         flex-flow: row;
     }
     .Botones {
-        display: flex;
-        flex-flow: row;
         div {
-            width: 100%;
+            width: 50%;
         }
         .Primero {
+            padding: 5px;
             border: 1px solid yellow;
-            border-radius: 10px;
-            background-color: red;
+            border-radius: 5px;
+            background-color: transparent;
+            &:hover {
+                background-color: yellow;
+            }
         }
         .Segundo {
+            padding: 5px;
             border: 1px solid white;
-            border-radius: 10px;
-            background-color: blue;
+            border-radius: 5px;
+            background-color: transparent;
+            &:hover {
+                background-color: white;
+            }
         }
         @media screen and (max-width:413px) {
             flex-flow: column;
