@@ -45,3 +45,15 @@
      var Products = "products.html";
      window.open(Products);
  }
+
+ /*
+ console.log(window.scrollY);
+ const scrollY = window.scrollY;
+ let halfY = 50%;
+ document.getElementById('Arrow').style.display = 'none';
+ function Top() {
+     if (scrollY == HalfY) {
+         document.getElementById('Arrow').style.display = 'none';
+     }
+ }
+ */
