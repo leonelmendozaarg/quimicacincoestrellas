@@ -1,5 +1,4 @@
 
-      var LoadPage = setTimeout(element, 4000);
          document.getElementById('Nav').style.width = "0px";
          
          function openNav() {
